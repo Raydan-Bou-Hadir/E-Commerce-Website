@@ -1,9 +1,7 @@
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
 import Header from './Components/Header/Header';
 import Hero from './Components/Hero/Hero';
-import Products from './Components/Products/Products';
+import Products from './components/Products/Products';
 import Modal from './Components/Modal/Modal';
 
 import { useState } from 'react';
