@@ -6,7 +6,7 @@ import img3 from "../../assets/images/hero-3.jpg";
 function Hero() {
     return (
         <main className="w-full h-auto grid py-8 px-6 md:px-10 lg:px-20 grid-cols-1 lg:grid-cols-[60%_38%] lg:gap-[2%] bg-black">
-            <div className="w-full h-[400px] md:h-[500px] lg:h-[650px] relative">
+            <div className="w-full h-[400px] md:h-[600px] lg:h-[650px] relative">
                 <img src={img1} alt="img1" className="w-full h-full object-cover overflow-hidden opacity-80" />
                 <div className="flex flex-col gap-3 md:gap-5 absolute top-32 left-8 md:top-48 md:left-14 lg:top-60 lg:left-20">
                     <h2 className="font-latin text-white text-2xl md:text-4xl lg:text-5xl">Cyber Monday Sale</h2>
@@ -27,7 +27,7 @@ function Hero() {
                 </div>
             </div>
 
-            <div className="relative w-full grid grid-rows-2 gap-[2%] h-[400px] md:h-[500px] lg:h-[650px] mt-6 lg:mt-0 ">
+            <div className="relative w-full grid grid-rows-2 gap-[2%] h-[400px] md:h-[800px] sm:h-[800px] xsm:h-[800px] lg:h-[650px] mt-6 lg:mt-0 ">
                 <div className="h-full">
                     <img src={img2} alt="img2" className="w-full h-full object-cover overflow-hidden opacity-60" />
                     <div className='absolute flex flex-col gap-5 top-[8%] left-3'>
