@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'lg':'1156px',
+        'xlg': '1280px',
+        'xsm': '375px',
+      },
+      fontFamily: {
+        latin: ['Qwitcher Grypen', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }

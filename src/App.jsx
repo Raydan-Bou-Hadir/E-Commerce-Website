@@ -1,8 +1,9 @@
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import Header from './Components/Header/Header';
-import Hero from './Components/Hero/Hero';
+import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
 import Modal from './Components/Modal/Modal';
+import Offers from './components/Offers/Offers';
 
 import { useState } from 'react';
 
@@ -46,6 +47,7 @@ function App() {
       <Header cartItems={cartItems} toggleModal={toggleModal} />
       <Hero />
       <Products handleAddToCart={handleAddToCart} />
+      <Offers />
       {modalVisible && <Modal cart={cartItems} toggleModal={toggleModal} updateCartQuantity={updateCartQuantity} />}
     </>
   )
