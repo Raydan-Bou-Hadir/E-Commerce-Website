@@ -14,7 +14,7 @@ function Offers() {
             </div>
         </div>
         <div className='w-full'>
-            <div className="relative overflow-hidden" style={{ paddingTop: '56.25%' /* 16:9 Aspect Ratio */ }}>
+            <div className="relative overflow-hidden" style={{ paddingTop: '56.25%' }}>
                 <iframe
                     className="absolute top-0 left-0 w-full h-full"
                     src="https://www.youtube.com/embed/d1liTbcAa9A"

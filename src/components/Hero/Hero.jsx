@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from "../../assets/images/hero-1.jpg";
 import img2 from "../../assets/images/hero-2.png";
 import img3 from "../../assets/images/hero-3.jpg";
+import { IoStorefrontSharp } from "react-icons/io5";
 
 function Hero() {
     return (
@@ -28,9 +29,9 @@ function Hero() {
             </div>
 
             <div className="relative w-full grid grid-rows-2 gap-[2%] h-[400px] md:h-[800px] sm:h-[800px] xsm:h-[800px] lg:h-[650px] mt-6 lg:mt-0 ">
-                <div className="h-full">
+                <div className="h-full relative">
                     <img src={img2} alt="img2" className="w-full h-full object-cover overflow-hidden opacity-60" />
-                    <div className='absolute flex flex-col gap-5 top-[8%] left-3'>
+                    <div className='absolute flex flex-col gap-5 top-[8%] left-3 xsm:top-[20%]'>
                         <h1 className='text-white text-5xl font-semibold'>Designer <br />Backpacks</h1>
                         <h4 className='text-white font-thin text-xl pb-2'>Inspier your unique backpack <br /> style with us.</h4>
                         <button type='button' className='w-[70%] uppercase text-white border px-3 py-2 md:px-4 md:py-3 lg:px-4 lg:py-3 font-medium rounded-lg hover:bg-white hover:text-black transition duration-300'> 
@@ -38,8 +39,17 @@ function Hero() {
                         </button>
                     </div>
                 </div>
-                <div className="h-full">
+                <div className="h-full relative">
                     <img src={img3} alt="img3" className="w-full h-full object-cover overflow-hidden opacity-80" />
+                    <div className='absolute flex flex-col xl:gap-2 top-[8%] left-3 lg:gap-2 md:top-[20%] md:gap-4 sm:gap-3 xsm:gap-2 xsm:top-[30%] sm:top-[30%]'>
+                        <h2 className='text-white xl:text-5xl font-semibold lg:text-4xl sm:text-5xl xsm:text-4xl'>Free EU <br />Delivery</h2>
+                        <p className='text-white xl:font-semibold text-4xl xsm:font-bold'>+</p>
+                        <p className='text-white font-thin xl:text-xl pb-2 lg:text-md sm:text-xl xsm:text-md'>Return over <span className='font-semibold border-b-2 xl:text-2xl lg:text-xl sm:text-3xl xsm:text-xl'>$99.00</span></p>
+                        <div className='text-white flex items-center xl:gap-3 lg:gap-2 xsm:gap-3'>
+                            <IoStorefrontSharp className='xl:text-2xl lg:text-xl xsm:text-2xl'/>
+                            <p className='xl:text-2xl lg:text-md sm:text-lg'>Collect from our store</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
