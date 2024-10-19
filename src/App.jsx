@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
 import Modal from './Components/Modal/Modal';
 import Offers from './components/Offers/Offers';
+import Footer from './components/Footer/Footer'; 
 
 import { useState } from 'react';
 
@@ -48,6 +49,7 @@ function App() {
       <Hero />
       <Products handleAddToCart={handleAddToCart} />
       <Offers />
+      <Footer />
       {modalVisible && <Modal cart={cartItems} toggleModal={toggleModal} updateCartQuantity={updateCartQuantity} />}
     </>
   )
